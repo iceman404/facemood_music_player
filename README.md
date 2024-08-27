@@ -27,14 +27,13 @@ This project is a smart music player powered by a Raspberry Pi 4B 8GB that detec
 
 ![Project Demo](https://via.placeholder.com/800x400.png?text=Demo+GIF+Here)
 
-*Add a GIF or image here.*
 
 ## 💻 Installation & Setup
 
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/facemood_music_player.git
+git clone https://github.com/iceman404/facemood_music_player.git
 cd facemood_music_player
 ```
 
