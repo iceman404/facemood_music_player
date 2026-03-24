@@ -1,5 +1,8 @@
 # Core dependencies for Face Mood Music Player
 opencv-python>=4.5.5.64
 mediapipe
-numpy>=1.21.0,<2.0.0  # Limit numpy version for compatibility
+numpy>=1.21.0,<2.0.0
 pygame>=2.0.0
+requests>=2.28.0
+PyQt6>=6.5.0
+yt-dlp>=2024.1.0

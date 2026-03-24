@@ -21,18 +21,20 @@ if requirements_file.exists():
 
 setup(
     name="facemood-music-player",
-    version="1.0.0",
-    description="A professional emotion-based music player using computer vision",
+    version="2.0.0",
+    description="Layered affect-aware music: perception → temporal fusion → policy → audio",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Face Mood Music Player Team",
     url="https://github.com/iceman404/facemood_music_player",
-    packages=find_packages(),
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires=requirements,
-    python_requires=">=3.7",
+    python_requires=">=3.9",
     entry_points={
         "console_scripts": [
-            "facemood-player=src.main:main",
+            "facemood-player=facemood.app.application:main",
+            "facemood-gui=facemood.gui.app:run_gui",
         ],
     },
     classifiers=[
@@ -40,11 +42,10 @@ setup(
         "Intended Audience :: End Users/Desktop",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Topic :: Multimedia :: Sound/Audio :: Players",
         "Topic :: Scientific/Engineering :: Image Recognition",
     ],

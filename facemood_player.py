@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""
-Entry point script for Face Mood Music Player.
-"""
+"""Entry point — ensures `src/` is on path when run without installation."""
 
-from src.main import main
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+
+from facemood.app.application import main
 
 if __name__ == '__main__':
     main()
